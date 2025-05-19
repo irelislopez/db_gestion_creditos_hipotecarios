@@ -29,27 +29,27 @@ Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV
 A continuación, se describen las principales entidades y sus relaciones:
 
 a. Entidades
-Beneficiario
+-Beneficiario
 
-ID_Beneficiario (PK)
+  ID_Beneficiario (PK)
 
-Nombres
+  Nombres
 
-Apellidos
+  Apellidos
 
-DNI
+  DNI
 
-Fecha_Nacimiento
+  Fecha_Nacimiento
 
-Género
+  Género
 
-Estado_Civil
+  Estado_Civil
 
-Situación_Laboral
+  Situación_Laboral
 
-Ingreso_Mensual
+  Ingreso_Mensual
 
-Crédito
+-Crédito
 
 ID_Crédito (PK)
 
