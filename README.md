@@ -189,3 +189,10 @@ No se permite eliminar créditos del sistema, solo marcarlos como “anulados”
 ![image](https://github.com/user-attachments/assets/968ed407-f161-452f-8617-f6be73c58871)
 
 https://dbdesigner.page.link/ZLgJduGKir7bcoN98
+
+Realizado por el grupo 3:
+Barquero, Valeria.
+Lavado, Gianmarco.
+López, Irelis.
+Mittani, Kristhel.
+Serrano, David.
