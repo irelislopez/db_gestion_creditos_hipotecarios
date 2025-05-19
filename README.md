@@ -91,7 +91,7 @@ a3. Vivienda
 
 a4.  Entidad_Financiera
 
-  *ID_Entidad_Financiera (PK)
+  *ID_Entidad_Financiera (PK)*
 
   *Nombre*
 
@@ -196,8 +196,13 @@ No se permite eliminar créditos del sistema, solo marcarlos como “anulados”
 https://dbdesigner.page.link/ZLgJduGKir7bcoN98
 
 Realizado por el grupo 3:
+
 Barquero, Valeria.
+
 Lavado, Gianmarco.
+
 López, Irelis.
+
 Mittani, Kristhel.
+
 Serrano, David.
