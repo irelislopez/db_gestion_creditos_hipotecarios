@@ -6,24 +6,24 @@ Caso Propuesto: Sistema de Gestión de Créditos Hipotecarios Mivivienda
 El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financia la adquisición, mejoramiento y construcción de viviendas, especialmente las de interés social. Ofrece productos como el Nuevo Crédito Mivivienda (NCMV), el Financiamiento Complementario Techo Propio (FCTP) y el Servicio de Cobertura de Riesgo Crediticio (S-CRC) .
 
 2. Objetivo del Sistema
-Diseñar una base de datos que permita:
+  Diseñar una base de datos que permita:
 
-Registrar y gestionar los créditos hipotecarios otorgados por el FMV.
+  Registrar y gestionar los créditos hipotecarios otorgados por el FMV.
 
-Almacenar información detallada de los beneficiarios, viviendas, entidades financieras y productos crediticios.
+  Almacenar información detallada de los beneficiarios, viviendas, entidades financieras y productos crediticios.
 
-Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.
+  Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.
 
 3. Requisitos Funcionales
-Registro de Beneficiarios: Información personal, situación laboral, ingresos, etc.
+  Registro de Beneficiarios: Información personal, situación laboral, ingresos, etc.
 
-Gestión de Créditos: Detalles del crédito otorgado, como monto, tasa de interés, plazo, fecha de desembolso, etc.
+  Gestión de Créditos: Detalles del crédito otorgado, como monto, tasa de interés, plazo, fecha de desembolso, etc.
 
-Información de Viviendas: Datos sobre la ubicación, valor, tipo de vivienda, etc.
+  Información de Viviendas: Datos sobre la ubicación, valor, tipo de vivienda, etc.
 
-Relación con Entidades Financieras: Información de las instituciones que otorgan los créditos.
+  Relación con Entidades Financieras: Información de las instituciones que otorgan los créditos.
 
-Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV.
+  Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV.
 
 4. Modelo Entidad-Relación (ER)
 A continuación, se describen las principales entidades y sus relaciones:
@@ -52,55 +52,55 @@ Beneficiario
 
 -Crédito
 
- ID_Crédito (PK)
+  ID_Crédito (PK)
 
- ID_Beneficiario (FK)
+  ID_Beneficiario (FK)
 
- ID_Producto (FK)
+  ID_Producto (FK)
 
- ID_Vivienda (FK)
+  ID_Vivienda (FK)
 
- ID_Entidad_Financiera (FK)
+  ID_Entidad_Financiera (FK)
 
- Monto
+  Monto
 
- Tasa_Interés
+  Tasa_Interés
 
- Plazo_Meses
+  Plazo_Meses
 
- Fecha_Desembolso
+  Fecha_Desembolso
 
 -Vivienda
 
   ID_Vivienda (PK)
 
-Dirección
+  Dirección
 
-Distrito
+  Distrito
 
-Provincia
+  Provincia
 
-Departamento
+  Departamento
 
-Tipo (Nueva/Usada)
+  Tipo (Nueva/Usada)
 
-Valor
+  Valor
 
 Entidad_Financiera
 
-ID_Entidad_Financiera (PK)
+  ID_Entidad_Financiera (PK)
 
-Nombre
+  Nombre
 
-RUC
+  RUC
 
-Dirección
+  Dirección
 
-Producto
+  Producto
 
-ID_Producto (PK)
+  ID_Producto (PK)
 
-Nombre (NCMV/FCTP/S-CRC)
+  Nombre (NCMV/FCTP/S-CRC)
 
 Descripción
 
