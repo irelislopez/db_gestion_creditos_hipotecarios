@@ -29,7 +29,8 @@ Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV
 A continuación, se describen las principales entidades y sus relaciones:
 
 a. Entidades
--Beneficiario
+
+Beneficiario
 
   ID_Beneficiario (PK)
 
@@ -51,27 +52,27 @@ a. Entidades
 
 -Crédito
 
-ID_Crédito (PK)
+ ID_Crédito (PK)
 
-ID_Beneficiario (FK)
+ ID_Beneficiario (FK)
 
-ID_Producto (FK)
+ ID_Producto (FK)
 
-ID_Vivienda (FK)
+ ID_Vivienda (FK)
 
-ID_Entidad_Financiera (FK)
+ ID_Entidad_Financiera (FK)
 
-Monto
+ Monto
 
-Tasa_Interés
+ Tasa_Interés
 
-Plazo_Meses
+ Plazo_Meses
 
-Fecha_Desembolso
+ Fecha_Desembolso
 
-Vivienda
+-Vivienda
 
-ID_Vivienda (PK)
+  ID_Vivienda (PK)
 
 Dirección
 
