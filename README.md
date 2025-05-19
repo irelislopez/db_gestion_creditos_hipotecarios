@@ -144,23 +144,6 @@ Actualización de Información: Establecer procedimientos para mantener actualiz
 
 Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
 
-¿Te gustaría que te proporcione el script SQL para crear esta base de datos o necesitas ayuda con algún otro aspecto del diseño?
-
-
-
-Fuentes
-
-
-
-
-
-Dijiste:
-Cuáles son las reglas del negocio?
-
-
-ChatGPT dijo:
-Perfecto, ahora te presento las reglas del negocio para el caso propuesto del Sistema de Gestión de Créditos Hipotecarios Mivivienda, derivadas de los requerimientos funcionales y del contexto del programa.
-
 📜 Reglas del Negocio – Sistema de Gestión de Créditos Hipotecarios Mivivienda
 Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
 
