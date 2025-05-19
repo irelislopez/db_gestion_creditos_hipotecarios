@@ -9,11 +9,11 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 
   Diseñar una base de datos que permita:
 
-  Registrar y gestionar los créditos hipotecarios otorgados por el FMV.
+  *Registrar y gestionar los créditos hipotecarios otorgados por el FMV.*
 
-  Almacenar información detallada de los beneficiarios, viviendas, entidades financieras y productos crediticios.
+  *Almacenar información detallada de los beneficiarios, viviendas, entidades financieras y productos crediticios.*
 
-  Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.
+  *Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.*
 
 3. Requisitos Funcionales
 
