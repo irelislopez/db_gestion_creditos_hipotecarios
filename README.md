@@ -1,2 +1,228 @@
 # db_gestion_creditos_hipotecarios
 El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financia la adquisición, mejoramiento y construcción de viviendas, especialmente las de interés social. Ofrece productos como el Nuevo Crédito Mivivienda (NCMV), el Financiamiento Complementario Techo Propio (FCTP) y el Servicio de Cobertura de Riesgo Crediticio (S-CRC) .
+
+Caso Propuesto: Sistema de Gestión de Créditos Hipotecarios Mivivienda
+1. Contexto
+El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financia la adquisición, mejoramiento y construcción de viviendas, especialmente las de interés social. Ofrece productos como el Nuevo Crédito Mivivienda (NCMV), el Financiamiento Complementario Techo Propio (FCTP) y el Servicio de Cobertura de Riesgo Crediticio (S-CRC) .
+
+2. Objetivo del Sistema
+Diseñar una base de datos que permita:
+
+Registrar y gestionar los créditos hipotecarios otorgados por el FMV.
+
+Almacenar información detallada de los beneficiarios, viviendas, entidades financieras y productos crediticios.
+
+Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.
+
+3. Requisitos Funcionales
+Registro de Beneficiarios: Información personal, situación laboral, ingresos, etc.
+
+Gestión de Créditos: Detalles del crédito otorgado, como monto, tasa de interés, plazo, fecha de desembolso, etc.
+
+Información de Viviendas: Datos sobre la ubicación, valor, tipo de vivienda, etc.
+
+Relación con Entidades Financieras: Información de las instituciones que otorgan los créditos.
+
+Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV.
+
+4. Modelo Entidad-Relación (ER)
+A continuación, se describen las principales entidades y sus relaciones:
+
+a. Entidades
+Beneficiario
+
+ID_Beneficiario (PK)
+
+Nombres
+
+Apellidos
+
+DNI
+
+Fecha_Nacimiento
+
+Género
+
+Estado_Civil
+
+Situación_Laboral
+
+Ingreso_Mensual
+
+Crédito
+
+ID_Crédito (PK)
+
+ID_Beneficiario (FK)
+
+ID_Producto (FK)
+
+ID_Vivienda (FK)
+
+ID_Entidad_Financiera (FK)
+
+Monto
+
+Tasa_Interés
+
+Plazo_Meses
+
+Fecha_Desembolso
+
+Vivienda
+
+ID_Vivienda (PK)
+
+Dirección
+
+Distrito
+
+Provincia
+
+Departamento
+
+Tipo (Nueva/Usada)
+
+Valor
+
+Entidad_Financiera
+
+ID_Entidad_Financiera (PK)
+
+Nombre
+
+RUC
+
+Dirección
+
+Producto
+
+ID_Producto (PK)
+
+Nombre (NCMV/FCTP/S-CRC)
+
+Descripción
+
+b. Relaciones
+Un Beneficiario puede tener uno o más Créditos.
+
+Un Crédito está asociado a un único Beneficiario, una Vivienda, una Entidad_Financiera y un Producto.
+
+Una Entidad_Financiera puede otorgar múltiples Créditos.
+
+Un Producto puede estar asociado a múltiples Créditos.
+
+5. Ejemplo de Consultas SQL
+Total de créditos otorgados por departamento:
+
+sql
+Copiar código
+SELECT v.Departamento, COUNT(*) AS Total_Creditos
+FROM Crédito c
+JOIN Vivienda v ON c.ID_Vivienda = v.ID_Vivienda
+GROUP BY v.Departamento;
+Monto promedio de créditos por tipo de producto:
+
+sql
+Copiar código
+SELECT p.Nombre, AVG(c.Monto) AS Monto_Promedio
+FROM Crédito c
+JOIN Producto p ON c.ID_Producto = p.ID_Producto
+GROUP BY p.Nombre;
+Número de créditos otorgados por cada entidad financiera:
+
+sql
+Copiar código
+SELECT ef.Nombre, COUNT(*) AS Total_Creditos
+FROM Crédito c
+JOIN Entidad_Financiera ef ON c.ID_Entidad_Financiera = ef.ID_Entidad_Financiera
+GROUP BY ef.Nombre;
+6. Consideraciones Adicionales
+Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
+
+Actualización de Información: Establecer procedimientos para mantener actualizada la información de créditos y beneficiarios.
+
+Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
+
+¿Te gustaría que te proporcione el script SQL para crear esta base de datos o necesitas ayuda con algún otro aspecto del diseño?
+
+
+
+Fuentes
+
+
+
+
+
+Dijiste:
+Cuáles son las reglas del negocio?
+
+
+ChatGPT dijo:
+Perfecto, ahora te presento las reglas del negocio para el caso propuesto del Sistema de Gestión de Créditos Hipotecarios Mivivienda, derivadas de los requerimientos funcionales y del contexto del programa.
+
+📜 Reglas del Negocio – Sistema de Gestión de Créditos Hipotecarios Mivivienda
+Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
+
+🧾 Reglas Generales
+Un beneficiario solo puede tener un crédito activo a la vez.
+
+Si desea otro crédito, debe haber cancelado completamente el anterior.
+
+El crédito solo puede ser otorgado a personas naturales, no jurídicas.
+
+Todos los beneficiarios deben tener un DNI válido y estar registrados como personas naturales.
+
+El valor de la vivienda debe estar dentro del rango establecido por el programa.
+
+Por ejemplo, el valor mínimo puede ser S/ 65,200 y el máximo S/ 464,200 (según el tipo de producto y normativa vigente).
+
+Solo entidades financieras autorizadas por el FMV pueden otorgar créditos del programa.
+
+El sistema debe validar que la entidad financiera esté registrada y activa.
+
+💰 Reglas de Crédito
+El monto del crédito no puede exceder el valor de la vivienda.
+
+Los productos crediticios tienen condiciones predefinidas:
+
+El producto "Nuevo Crédito Mivivienda (NCMV)" tiene requisitos específicos de cuota inicial, tasa y plazo.
+
+El "Financiamiento Complementario Techo Propio (FCTP)" solo aplica para construcción en terreno propio.
+
+El crédito debe tener una tasa de interés y un plazo dentro del rango permitido.
+
+Por ejemplo: tasas entre 6% y 12%; plazos de entre 5 y 25 años.
+
+Cada crédito debe estar vinculado a un único producto Mivivienda.
+
+Los desembolsos de crédito se registran con fecha y no pueden ser modificados una vez emitidos.
+
+🏠 Reglas de Vivienda
+Las viviendas deben estar ubicadas en el territorio peruano.
+
+La dirección debe estar compuesta al menos por departamento, provincia y distrito.
+
+Solo se financian viviendas nuevas o usadas, no terrenos sin construcción.
+
+Una vivienda no puede estar asociada a más de un crédito activo simultáneamente.
+
+👤 Reglas del Beneficiario
+El beneficiario debe demostrar ingresos sostenibles y capacidad de pago.
+
+Por ejemplo: ingresos mínimos mensuales según el valor del crédito solicitado.
+
+El beneficiario no debe haber sido propietario de una vivienda en los últimos 5 años.
+
+Esto aplica especialmente para acceder a bonos o productos especiales.
+
+En caso de ser pareja (casados o convivientes), ambos deben ser evaluados como co-beneficiarios.
+
+📑 Reglas Administrativas
+Todos los registros deben mantener una trazabilidad:
+
+Se deben registrar fecha de creación, modificación y el usuario que realizó los cambios.
+
+La base de datos debe permitir generar reportes por año, departamento, entidad financiera y tipo de producto.
+
+No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
