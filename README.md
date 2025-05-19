@@ -184,3 +184,6 @@ Se deben registrar fecha de creación, modificación y el usuario que realizó l
 La base de datos debe permitir generar reportes por año, departamento, entidad financiera y tipo de producto.
 
 No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
+
+![image](https://github.com/user-attachments/assets/968ed407-f161-452f-8617-f6be73c58871)
+
