@@ -1,10 +1,12 @@
 # db_gestion_creditos_hipotecarios
 Caso Propuesto: Sistema de Gestión de Créditos Hipotecarios Mivivienda
 
-#1. Contexto
+1. Contexto
+
 El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financia la adquisición, mejoramiento y construcción de viviendas, especialmente las de interés social. Ofrece productos como el Nuevo Crédito Mivivienda (NCMV), el Financiamiento Complementario Techo Propio (FCTP) y el Servicio de Cobertura de Riesgo Crediticio (S-CRC) .
 
 2. Objetivo del Sistema
+
   Diseñar una base de datos que permita:
 
   Registrar y gestionar los créditos hipotecarios otorgados por el FMV.
@@ -14,6 +16,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.
 
 3. Requisitos Funcionales
+
   Registro de Beneficiarios: Información personal, situación laboral, ingresos, etc.
 
   Gestión de Créditos: Detalles del crédito otorgado, como monto, tasa de interés, plazo, fecha de desembolso, etc.
@@ -25,99 +28,102 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV.
 
 4. Modelo Entidad-Relación (ER)
+   
 A continuación, se describen las principales entidades y sus relaciones:
 
 a. Entidades
 
-Beneficiario
+a1. Beneficiario
 
-  ID_Beneficiario (PK)
+  *ID_Beneficiario (PK)*
 
-  Nombres
+  *Nombres*
 
-  Apellidos
+  *Apellidos*
 
-  DNI
+  *DNI*
 
-  Fecha_Nacimiento
+  *Fecha_Nacimiento*
 
-  Género
+  *Género*
 
-  Estado_Civil
+  *Estado_Civil*
 
-  Situación_Laboral
+  *Situación_Laboral*
 
-  Ingreso_Mensual
+  *Ingreso_Mensual*
 
--Crédito
+a2.  Crédito
 
-  ID_Crédito (PK)
+  *ID_Crédito (PK)*
 
-  ID_Beneficiario (FK)
+  *ID_Beneficiario (FK)*
 
-  ID_Producto (FK)
+  *ID_Producto (FK)*
 
-  ID_Vivienda (FK)
+  *ID_Vivienda (FK)*
 
-  ID_Entidad_Financiera (FK)
+  *ID_Entidad_Financiera (FK)*
 
-  Monto
+  *Monto*
 
-  Tasa_Interés
+  *Tasa_Interés*
 
-  Plazo_Meses
+  *Plazo_Meses*
 
-  Fecha_Desembolso
+  *Fecha_Desembolso*
 
--Vivienda
+a3. Vivienda
 
-  ID_Vivienda (PK)
+  *ID_Vivienda (PK)*
 
-  Dirección
+  *Dirección*
 
-  Distrito
+  *Distrito*
 
-  Provincia
+  *Provincia*
 
-  Departamento
+  *Departamento*
 
-  Tipo (Nueva/Usada)
+  *Tipo (Nueva/Usada)*
 
-  Valor
+  *Valor*
 
-Entidad_Financiera
+a4.  Entidad_Financiera
 
-  ID_Entidad_Financiera (PK)
+  *ID_Entidad_Financiera (PK)
 
-  Nombre
+  *Nombre*
 
-  RUC
+  *RUC*
 
-  Dirección
+  *Dirección*
 
-  Producto
+  a5.  Producto
+  
+  *ID_Producto (PK)*
 
-  ID_Producto (PK)
+  *Nombre (NCMV/FCTP/S-CRC)*
 
-  Nombre (NCMV/FCTP/S-CRC)
-
-Descripción
+*Descripción*
 
 b. Relaciones
-Un Beneficiario puede tener uno o más Créditos.
 
-Un Crédito está asociado a un único Beneficiario, una Vivienda, una Entidad_Financiera y un Producto.
+-Un Beneficiario puede tener uno o más Créditos.
 
-Una Entidad_Financiera puede otorgar múltiples Créditos.
+-Un Crédito está asociado a un único Beneficiario, una Vivienda, una Entidad_Financiera y un Producto.
 
-Un Producto puede estar asociado a múltiples Créditos.
+-Una Entidad_Financiera puede otorgar múltiples Créditos.
+
+-Un Producto puede estar asociado a múltiples Créditos.
 
 6. Consideraciones Adicionales
-Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
 
-Actualización de Información: Establecer procedimientos para mantener actualizada la información de créditos y beneficiarios.
+-Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
 
-Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
+-Actualización de Información: Establecer procedimientos para mantener actualizada la información de créditos y beneficiarios.
+
+-Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
 
 📜 Reglas del Negocio – Sistema de Gestión de Créditos Hipotecarios Mivivienda
 Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
