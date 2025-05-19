@@ -112,31 +112,6 @@ Una Entidad_Financiera puede otorgar múltiples Créditos.
 
 Un Producto puede estar asociado a múltiples Créditos.
 
-5. Ejemplo de Consultas SQL
-Total de créditos otorgados por departamento:
-
-sql
-Copiar código
-SELECT v.Departamento, COUNT(*) AS Total_Creditos
-FROM Crédito c
-JOIN Vivienda v ON c.ID_Vivienda = v.ID_Vivienda
-GROUP BY v.Departamento;
-Monto promedio de créditos por tipo de producto:
-
-sql
-Copiar código
-SELECT p.Nombre, AVG(c.Monto) AS Monto_Promedio
-FROM Crédito c
-JOIN Producto p ON c.ID_Producto = p.ID_Producto
-GROUP BY p.Nombre;
-Número de créditos otorgados por cada entidad financiera:
-
-sql
-Copiar código
-SELECT ef.Nombre, COUNT(*) AS Total_Creditos
-FROM Crédito c
-JOIN Entidad_Financiera ef ON c.ID_Entidad_Financiera = ef.ID_Entidad_Financiera
-GROUP BY ef.Nombre;
 6. Consideraciones Adicionales
 Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
 
