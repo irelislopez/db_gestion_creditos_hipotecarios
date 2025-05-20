@@ -191,8 +191,11 @@ La base de datos debe permitir generar reportes por año, departamento, entidad 
 
 No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
 
+#Diagrama entidad relación
+
 ![image](https://github.com/user-attachments/assets/968ed407-f161-452f-8617-f6be73c58871)
 
+#Diseño lógico
 https://dbdesigner.page.link/ZLgJduGKir7bcoN98
 
 Realizado por el grupo 3:
