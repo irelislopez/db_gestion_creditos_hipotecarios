@@ -1,10 +1,10 @@
 # db_gestion_creditos_hipotecarios
 #Caso Propuesto: Sistema de Gestión de Créditos Hipotecarios Mivivienda
 
-##1. Contexto
+## 1. Contexto
 El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financia la adquisición, mejoramiento y construcción de viviendas, especialmente las de interés social. Ofrece productos como el Nuevo Crédito Mivivienda (NCMV), el Financiamiento Complementario Techo Propio (FCTP) y el Servicio de Cobertura de Riesgo Crediticio (S-CRC) .
 
-##2. Objetivo del Sistema
+## 2. Objetivo del Sistema
 
   Diseñar una base de datos que permita:
 
@@ -14,7 +14,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 
   *Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.*
 
-##3. Requisitos Funcionales
+## 3. Requisitos Funcionales
 
   Registro de Beneficiarios: Información personal, situación laboral, ingresos, etc.
 
@@ -26,7 +26,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 
   Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV.
 
-##4. Modelo Entidad-Relación (ER)
+## 4. Modelo Entidad-Relación (ER)
    
 A continuación, se describen las principales entidades y sus relaciones:
 
