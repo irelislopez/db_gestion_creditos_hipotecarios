@@ -34,15 +34,15 @@ A continuación, se describen las principales entidades y sus relaciones:
 
 -a1. Beneficiario
 
-  *ID_Beneficiario (PK),
-  *Nombres,
-  *Apellidos,
-  *DNI,
-  *Fecha_Nacimiento,
-  *Género,
-  *Estado_Civil,
-  *Situación_Laboral,
-  *Ingreso_Mensual,
+  -ID_Beneficiario (PK),
+  -Nombres,
+  -Apellidos,
+  -DNI,
+  -Fecha_Nacimiento,
+  -Género,
+  -Estado_Civil,
+  -Situación_Laboral,
+  -Ingreso_Mensual,
 
 -a2.  Crédito
 
