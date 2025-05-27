@@ -32,7 +32,7 @@ A continuación, se describen las principales entidades y sus relaciones:
 
 ###a. Entidades
 
--a1. Beneficiario
+* a1. Beneficiario
 
   - ID_Beneficiario (PK)
   - Nombres
@@ -44,42 +44,42 @@ A continuación, se describen las principales entidades y sus relaciones:
   - Situación_Laboral
   - Ingreso_Mensual
 
--a2.  Crédito
+* a2.  Crédito
 
-  *ID_Crédito (PK),
-  *ID_Beneficiario (FK),
-  *ID_Producto (FK),
-  *ID_Vivienda (FK),
-  *ID_Entidad_Financiera (FK),
-  *Monto,
-  *Tasa_Interés,
-  *Plazo_Meses,
-  *Fecha_Desembolso,
+  - ID_Crédito (PK)
+  - ID_Beneficiario (FK)
+  - ID_Producto (FK)
+  - ID_Vivienda (FK)
+  - ID_Entidad_Financiera (FK)
+  - Monto
+  - Tasa_Interés
+  - Plazo_Meses
+  -Fecha_Desembolso
 
--a3. Vivienda
+* a3. Vivienda
 
-  *ID_Vivienda (PK),
-  *Dirección,
-  *Distrito,
-  *Provincia,
-  *Departamento,
-  *Tipo (Nueva/Usada),
-  *Valor,
+  - ID_Vivienda (PK)
+  - Dirección
+  - Distrito
+  - Provincia 
+  - Departamento
+  - Tipo (Nueva/Usada)
+  - Valor 
 
--a4.  Entidad_Financiera
+* a4.  Entidad_Financiera
 
-  *ID_Entidad_Financiera (PK),
-  *Nombre,
-  *RUC,
-  *Dirección,
+  - ID_Entidad_Financiera (PK)
+  - Nombre
+  - RUC
+  - Dirección
   
-  -a5.  Producto
+* a5.  Producto
   
-  *ID_Producto (PK),
-  *Nombre (NCMV/FCTP/S-CRC),
+  - ID_Producto (PK)
+  - Nombre (NCMV/FCTP/S-CRC) 
 
 
-###b. Relaciones
+### b. Relaciones
 
 -Un Beneficiario puede tener uno o más Créditos.
 
@@ -89,7 +89,7 @@ A continuación, se describen las principales entidades y sus relaciones:
 
 -Un Producto puede estar asociado a múltiples Créditos.
 
-##5. Consideraciones Adicionales
+## 5. Consideraciones Adicionales
 
 -Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
 
@@ -163,23 +163,18 @@ La base de datos debe permitir generar reportes por año, departamento, entidad 
 
 No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
 
-#Diagrama entidad relación
+# Diagrama entidad relación
 
 ![image](https://github.com/user-attachments/assets/5f0cedce-920b-4bed-8730-39a335eb6807)
 
 
 
-#Diseño lógico
+# Diseño lógico
 https://dbdesigner.page.link/ZLgJduGKir7bcoN98
 
-Realizado por el grupo 3:
-
-Barquero, Valeria.
-
-Lavado, Gianmarco.
-
-López, Irelis.
-
-Mittani, Kristhel.
-
-Serrano, David.
+## Realizado por el grupo 3:
+ - Barquero, Valeria.
+ - Lavado, Gianmarco.
+ - López, Irelis.
+ - Mittani, Kristhel.
+ - Serrano, David.
