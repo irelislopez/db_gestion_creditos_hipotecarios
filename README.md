@@ -30,7 +30,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
    
 A continuación, se describen las principales entidades y sus relaciones:
 
-a. Entidades
+###a. Entidades
 
 a1. Beneficiario
 
@@ -106,7 +106,7 @@ a4.  Entidad_Financiera
 
 *Descripción*
 
-b. Relaciones
+###b. Relaciones
 
 -Un Beneficiario puede tener uno o más Créditos.
 
@@ -116,7 +116,7 @@ b. Relaciones
 
 -Un Producto puede estar asociado a múltiples Créditos.
 
-6. Consideraciones Adicionales
+##5. Consideraciones Adicionales
 
 -Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
 
@@ -192,7 +192,8 @@ No se permite eliminar créditos del sistema, solo marcarlos como “anulados”
 
 #Diagrama entidad relación
 
-![image](https://github.com/user-attachments/assets/5d5d971f-a263-4d9b-bb2d-1ce9f43833a1)
+![image](https://github.com/user-attachments/assets/5f0cedce-920b-4bed-8730-39a335eb6807)
+
 
 
 #Diseño lógico
