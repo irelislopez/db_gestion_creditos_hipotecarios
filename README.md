@@ -5,35 +5,23 @@
 El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financia la adquisición, mejoramiento y construcción de viviendas, especialmente las de interés social. Ofrece productos como el Nuevo Crédito Mivivienda (NCMV), el Financiamiento Complementario Techo Propio (FCTP) y el Servicio de Cobertura de Riesgo Crediticio (S-CRC) .
 
 ## 2. Objetivo del Sistema
-
   Diseñar una base de datos que permita:
-
-  *Registrar y gestionar los créditos hipotecarios otorgados por el FMV.*
-
-  *Almacenar información detallada de los beneficiarios, viviendas, entidades financieras y productos crediticios.*
-
-  *Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.*
+  - Registrar y gestionar los créditos hipotecarios otorgados por el FMV.*
+  - Almacenar información detallada de los beneficiarios, viviendas, entidades financieras y productos crediticios.
+  - Facilitar el análisis y generación de reportes sobre las colocaciones de créditos.
 
 ## 3. Requisitos Funcionales
-
-  Registro de Beneficiarios: Información personal, situación laboral, ingresos, etc.
-
-  Gestión de Créditos: Detalles del crédito otorgado, como monto, tasa de interés, plazo, fecha de desembolso, etc.
-
-  Información de Viviendas: Datos sobre la ubicación, valor, tipo de vivienda, etc.
-
-  Relación con Entidades Financieras: Información de las instituciones que otorgan los créditos.
-
-  Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV.
+  - Registro de Beneficiarios: Información personal, situación laboral, ingresos, etc.
+  - Gestión de Créditos: Detalles del crédito otorgado, como monto, tasa de interés, plazo, fecha de desembolso, etc.
+  - Información de Viviendas: Datos sobre la ubicación, valor, tipo de vivienda, etc.
+  - Relación con Entidades Financieras: Información de las instituciones que otorgan los créditos.
+  - Productos Crediticios: Detalles de los diferentes productos ofrecidos por el FMV.
 
 ## 4. Modelo Entidad-Relación (ER)
-   
-A continuación, se describen las principales entidades y sus relaciones:
+   A continuación, se describen las principales entidades y sus relaciones:
 
-###a. Entidades
-
+### a. Entidades
 * a1. Beneficiario
-
   - ID_Beneficiario (PK)
   - Nombres
   - Apellidos
@@ -45,7 +33,6 @@ A continuación, se describen las principales entidades y sus relaciones:
   - Ingreso_Mensual
 
 * a2.  Crédito
-
   - ID_Crédito (PK)
   - ID_Beneficiario (FK)
   - ID_Producto (FK)
@@ -57,7 +44,6 @@ A continuación, se describen las principales entidades y sus relaciones:
   -Fecha_Desembolso
 
 * a3. Vivienda
-
   - ID_Vivienda (PK)
   - Dirección
   - Distrito
@@ -67,37 +53,29 @@ A continuación, se describen las principales entidades y sus relaciones:
   - Valor 
 
 * a4.  Entidad_Financiera
-
   - ID_Entidad_Financiera (PK)
   - Nombre
   - RUC
   - Dirección
   
 * a5.  Producto
-  
   - ID_Producto (PK)
   - Nombre (NCMV/FCTP/S-CRC) 
 
 
 ### b. Relaciones
-
--Un Beneficiario puede tener uno o más Créditos.
-
--Un Crédito está asociado a un único Beneficiario, una Vivienda, una Entidad_Financiera y un Producto.
-
--Una Entidad_Financiera puede otorgar múltiples Créditos.
-
--Un Producto puede estar asociado a múltiples Créditos.
+- Un Beneficiario puede tener uno o más Créditos.
+- Un Crédito está asociado a un único Beneficiario, una Vivienda, una Entidad_Financiera y un Producto.
+- Una Entidad_Financiera puede otorgar múltiples Créditos.
+- Un Producto puede estar asociado a múltiples Créditos.
 
 ## 5. Consideraciones Adicionales
+- Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
+- Actualización de Información: Establecer procedimientos para mantener actualizada la información de créditos y beneficiarios.
+- Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
 
--Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
-
--Actualización de Información: Establecer procedimientos para mantener actualizada la información de créditos y beneficiarios.
-
--Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
-
-📜 Reglas del Negocio – Sistema de Gestión de Créditos Hipotecarios Mivivienda
+📜 Reglas del Negocio 
+– Sistema de Gestión de Créditos Hipotecarios Mivivienda
 Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
 
 🧾 Reglas Generales
