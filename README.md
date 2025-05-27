@@ -74,7 +74,8 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 - Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
 
 ### 📜 Reglas del Negocio 
-– Sistema de Gestión de Créditos Hipotecarios Mivivienda:Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
+Sistema de Gestión de Créditos Hipotecarios Mivivienda: 
+Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
 
 ### 🧾 Reglas Generales
     - Un beneficiario solo puede tener un crédito activo a la vez.
