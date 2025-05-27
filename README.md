@@ -32,79 +32,51 @@ A continuación, se describen las principales entidades y sus relaciones:
 
 ###a. Entidades
 
-a1. Beneficiario
+-a1. Beneficiario
 
-  *ID_Beneficiario (PK)*
+  *ID_Beneficiario (PK)
+  *Nombres
+  *Apellidos
+  *DNI
+  *Fecha_Nacimiento
+  *Género
+  *Estado_Civil
+  *Situación_Laboral
+  *Ingreso_Mensual
 
-  *Nombres*
+-a2.  Crédito
 
-  *Apellidos*
+  *ID_Crédito (PK)
+  *ID_Beneficiario (FK)
+  *ID_Producto (FK)
+  *ID_Vivienda (FK)
+  *ID_Entidad_Financiera (FK)
+  *Monto
+  *Tasa_Interés
+  *Plazo_Meses
+  *Fecha_Desembolso
 
-  *DNI*
+-a3. Vivienda
 
-  *Fecha_Nacimiento*
+  *ID_Vivienda (PK)
+  *Dirección
+  *Distrito
+  *Provincia
+  *Departamento
+  *Tipo (Nueva/Usada)
+  *Valor
 
-  *Género*
+-a4.  Entidad_Financiera
 
-  *Estado_Civil*
-
-  *Situación_Laboral*
-
-  *Ingreso_Mensual*
-
-a2.  Crédito
-
-  *ID_Crédito (PK)*
-
-  *ID_Beneficiario (FK)*
-
-  *ID_Producto (FK)*
-
-  *ID_Vivienda (FK)*
-
-  *ID_Entidad_Financiera (FK)*
-
-  *Monto*
-
-  *Tasa_Interés*
-
-  *Plazo_Meses*
-
-  *Fecha_Desembolso*
-
-a3. Vivienda
-
-  *ID_Vivienda (PK)*
-
-  *Dirección*
-
-  *Distrito*
-
-  *Provincia*
-
-  *Departamento*
-
-  *Tipo (Nueva/Usada)*
-
-  *Valor*
-
-a4.  Entidad_Financiera
-
-  *ID_Entidad_Financiera (PK)*
-
-  *Nombre*
-
-  *RUC*
-
-  *Dirección*
-
-  a5.  Producto
+  *ID_Entidad_Financiera (PK)
+  *Nombre
+  *RUC
+  *Dirección
+  -a5.  Producto
   
-  *ID_Producto (PK)*
+  *ID_Producto (PK)
+  *Nombre (NCMV/FCTP/S-CRC)
 
-  *Nombre (NCMV/FCTP/S-CRC)*
-
-*Descripción*
 
 ###b. Relaciones
 
