@@ -34,13 +34,13 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 * a2.  Crédito
   - ID_Crédito (PK)
   - ID_Beneficiario (FK)
-  - ID_Bono_Mivivienda (FK)
+  - ID_Bono_FMV (FK)
   - ID_Vivienda (FK)
   - ID_Entidad_Financiera (FK)
   - Monto
   - Tasa_Interés
   - Plazo_Meses
-  -Fecha_Desembolso
+  - Fecha_Desembolso
 
 * a3. Vivienda
   - ID_Vivienda (PK)
@@ -121,7 +121,8 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
 ![image](https://github.com/user-attachments/assets/660e55e2-0e1c-4e08-a303-6fb0c0ea3cb0)
 
 # Diseño lógico
-https://dbdesigner.page.link/ZLgJduGKir7bcoN98
+![image](https://github.com/user-attachments/assets/751b7595-0f30-4dd1-a88f-234d3a54a599)
+
 
 ## Realizado por el grupo 3:
  - Barquero, Valeria.
