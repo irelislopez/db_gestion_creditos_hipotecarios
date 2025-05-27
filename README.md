@@ -34,48 +34,49 @@ A continuación, se describen las principales entidades y sus relaciones:
 
 -a1. Beneficiario
 
-  *ID_Beneficiario (PK)
-  *Nombres
-  *Apellidos
-  *DNI
-  *Fecha_Nacimiento
-  *Género
-  *Estado_Civil
-  *Situación_Laboral
-  *Ingreso_Mensual
+  *ID_Beneficiario (PK),
+  *Nombres,
+  *Apellidos,
+  *DNI,
+  *Fecha_Nacimiento,
+  *Género,
+  *Estado_Civil,
+  *Situación_Laboral,
+  *Ingreso_Mensual,
 
 -a2.  Crédito
 
-  *ID_Crédito (PK)
-  *ID_Beneficiario (FK)
-  *ID_Producto (FK)
-  *ID_Vivienda (FK)
-  *ID_Entidad_Financiera (FK)
-  *Monto
-  *Tasa_Interés
-  *Plazo_Meses
-  *Fecha_Desembolso
+  *ID_Crédito (PK),
+  *ID_Beneficiario (FK),
+  *ID_Producto (FK),
+  *ID_Vivienda (FK),
+  *ID_Entidad_Financiera (FK),
+  *Monto,
+  *Tasa_Interés,
+  *Plazo_Meses,
+  *Fecha_Desembolso,
 
 -a3. Vivienda
 
-  *ID_Vivienda (PK)
-  *Dirección
-  *Distrito
-  *Provincia
-  *Departamento
-  *Tipo (Nueva/Usada)
-  *Valor
+  *ID_Vivienda (PK),
+  *Dirección,
+  *Distrito,
+  *Provincia,
+  *Departamento,
+  *Tipo (Nueva/Usada),
+  *Valor,
 
 -a4.  Entidad_Financiera
 
-  *ID_Entidad_Financiera (PK)
-  *Nombre
-  *RUC
-  *Dirección
+  *ID_Entidad_Financiera (PK),
+  *Nombre,
+  *RUC,
+  *Dirección,
+  
   -a5.  Producto
   
-  *ID_Producto (PK)
-  *Nombre (NCMV/FCTP/S-CRC)
+  *ID_Producto (PK),
+  *Nombre (NCMV/FCTP/S-CRC),
 
 
 ###b. Relaciones
