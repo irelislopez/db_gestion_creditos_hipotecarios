@@ -73,72 +73,47 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 - Actualización de Información: Establecer procedimientos para mantener actualizada la información de créditos y beneficiarios.
 - Integración con Sistemas Externos: Posibilidad de integrar la base de datos con sistemas del FMV o entidades financieras para facilitar el intercambio de información.
 
-📜 Reglas del Negocio 
-– Sistema de Gestión de Créditos Hipotecarios Mivivienda
-Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
+### 📜 Reglas del Negocio 
+– Sistema de Gestión de Créditos Hipotecarios Mivivienda:Las reglas del negocio son condiciones, restricciones o políticas que deben cumplirse en la operación del sistema, reflejando la lógica y normas del programa Mivivienda.
 
-🧾 Reglas Generales
-Un beneficiario solo puede tener un crédito activo a la vez.
+### 🧾 Reglas Generales
+    - Un beneficiario solo puede tener un crédito activo a la vez.
+    - Si desea otro crédito, debe haber cancelado completamente el anterior.
+    - El crédito solo puede ser otorgado a personas naturales, no jurídicas.
+    - Todos los beneficiarios deben tener un DNI válido y estar registrados como personas naturales.
+    - El valor de la vivienda debe estar dentro del rango establecido por el programa.
+    - Por ejemplo, el valor mínimo puede ser S/ 65,200 y el máximo S/ 464,200 (según el tipo de producto y normativa vigente).
+    - Solo entidades financieras autorizadas por el FMV pueden otorgar créditos del programa.
+    - El sistema debe validar que la entidad financiera esté registrada y activa.
 
-Si desea otro crédito, debe haber cancelado completamente el anterior.
+### 💰 Reglas de Crédito
+    - El monto del crédito no puede exceder el valor de la vivienda.
+    - Los productos crediticios tienen condiciones predefinidas:
+    - El producto "Nuevo Crédito Mivivienda (NCMV)" tiene requisitos específicos de cuota inicial, tasa y plazo.
+    - El "Financiamiento Complementario Techo Propio (FCTP)" solo aplica para construcción en terreno propio.
+    - El crédito debe tener una tasa de interés y un plazo dentro del rango permitido.
+    - Por ejemplo: tasas entre 6% y 12%; plazos de entre 5 y 25 años.
+    - Cada crédito debe estar vinculado a un único producto Mivivienda.
+    - Los desembolsos de crédito se registran con fecha y no pueden ser modificados una vez emitidos.
 
-El crédito solo puede ser otorgado a personas naturales, no jurídicas.
+### 🏠 Reglas de Vivienda
+    - Las viviendas deben estar ubicadas en el territorio peruano.
+    - La dirección debe estar compuesta al menos por departamento, provincia y distrito.
+    - Solo se financian viviendas nuevas o usadas, no terrenos sin construcción.
+    - Una vivienda no puede estar asociada a más de un crédito activo simultáneamente.
 
-Todos los beneficiarios deben tener un DNI válido y estar registrados como personas naturales.
+### 👤 Reglas del Beneficiario
+    - El beneficiario debe demostrar ingresos sostenibles y capacidad de pago.
+    - Por ejemplo: ingresos mínimos mensuales según el valor del crédito solicitado.
+    - El beneficiario no debe haber sido propietario de una vivienda en los últimos 5 años.
+    - Esto aplica especialmente para acceder a bonos o productos especiales.
+    - En caso de ser pareja (casados o convivientes), ambos deben ser evaluados como co-beneficiarios.
 
-El valor de la vivienda debe estar dentro del rango establecido por el programa.
-
-Por ejemplo, el valor mínimo puede ser S/ 65,200 y el máximo S/ 464,200 (según el tipo de producto y normativa vigente).
-
-Solo entidades financieras autorizadas por el FMV pueden otorgar créditos del programa.
-
-El sistema debe validar que la entidad financiera esté registrada y activa.
-
-💰 Reglas de Crédito
-El monto del crédito no puede exceder el valor de la vivienda.
-
-Los productos crediticios tienen condiciones predefinidas:
-
-El producto "Nuevo Crédito Mivivienda (NCMV)" tiene requisitos específicos de cuota inicial, tasa y plazo.
-
-El "Financiamiento Complementario Techo Propio (FCTP)" solo aplica para construcción en terreno propio.
-
-El crédito debe tener una tasa de interés y un plazo dentro del rango permitido.
-
-Por ejemplo: tasas entre 6% y 12%; plazos de entre 5 y 25 años.
-
-Cada crédito debe estar vinculado a un único producto Mivivienda.
-
-Los desembolsos de crédito se registran con fecha y no pueden ser modificados una vez emitidos.
-
-🏠 Reglas de Vivienda
-Las viviendas deben estar ubicadas en el territorio peruano.
-
-La dirección debe estar compuesta al menos por departamento, provincia y distrito.
-
-Solo se financian viviendas nuevas o usadas, no terrenos sin construcción.
-
-Una vivienda no puede estar asociada a más de un crédito activo simultáneamente.
-
-👤 Reglas del Beneficiario
-El beneficiario debe demostrar ingresos sostenibles y capacidad de pago.
-
-Por ejemplo: ingresos mínimos mensuales según el valor del crédito solicitado.
-
-El beneficiario no debe haber sido propietario de una vivienda en los últimos 5 años.
-
-Esto aplica especialmente para acceder a bonos o productos especiales.
-
-En caso de ser pareja (casados o convivientes), ambos deben ser evaluados como co-beneficiarios.
-
-📑 Reglas Administrativas
-Todos los registros deben mantener una trazabilidad:
-
-Se deben registrar fecha de creación, modificación y el usuario que realizó los cambios.
-
-La base de datos debe permitir generar reportes por año, departamento, entidad financiera y tipo de producto.
-
-No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
+### 📑 Reglas Administrativas
+    - Todos los registros deben mantener una trazabilidad:
+    - Se deben registrar fecha de creación, modificación y el usuario que realizó los cambios.
+    - La base de datos debe permitir generar reportes por año, departamento, entidad financiera y tipo de producto.
+    - No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
 
 # Diagrama entidad relación
 
