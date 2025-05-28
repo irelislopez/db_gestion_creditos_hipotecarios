@@ -116,11 +116,11 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
     - La base de datos debe permitir generar reportes por año, departamento, entidad financiera y tipo de bono.
     - No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
 
-# Diagrama entidad relación
+## Diagrama entidad relación
 
 ![image](https://github.com/user-attachments/assets/660e55e2-0e1c-4e08-a303-6fb0c0ea3cb0)
 
-# Diseño lógico
+## Diseño lógico
 ![image](https://github.com/user-attachments/assets/751b7595-0f30-4dd1-a88f-234d3a54a599)
 
 
