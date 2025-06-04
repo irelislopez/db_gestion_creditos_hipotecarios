@@ -117,11 +117,10 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
     - No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
 
 ## Diagrama entidad relación
-
-![image](https://github.com/user-attachments/assets/9deafa44-b090-45a7-be79-565170fe4b31)
+![image](https://github.com/user-attachments/assets/03977989-a7be-495d-9347-9374957b7152)
 
 ## Diseño lógico
-![image](https://github.com/user-attachments/assets/751b7595-0f30-4dd1-a88f-234d3a54a599)
+![image](https://github.com/user-attachments/assets/9deafa44-b090-45a7-be79-565170fe4b31)
 
 
 ## Realizado por el grupo 3:
