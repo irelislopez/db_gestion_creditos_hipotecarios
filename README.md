@@ -118,7 +118,7 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
 
 ## Diagrama entidad relación
 
-![image](https://github.com/user-attachments/assets/660e55e2-0e1c-4e08-a303-6fb0c0ea3cb0)
+![image](https://github.com/user-attachments/assets/9deafa44-b090-45a7-be79-565170fe4b31)
 
 ## Diseño lógico
 ![image](https://github.com/user-attachments/assets/751b7595-0f30-4dd1-a88f-234d3a54a599)
