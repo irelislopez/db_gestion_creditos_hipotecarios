@@ -61,6 +61,7 @@ beneficiario_id INT,
 entidad_financiera_id INT,
 vivienda_id INT, 
 bono_fmv_id INT, 
+
 CONSTRAINT fk_credito_beneficiario FOREIGN KEY (beneficiario_id) REFERENCES beneficiario (id),
 CONSTRAINT fk_credito_entidad_financiera FOREIGN KEY (entidad_financiera_id) REFERENCES entidad_financiera (id),
 CONSTRAINT fk_credito_vivienda FOREIGN KEY (vivienda_id) REFERENCES vivienda (id),
