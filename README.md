@@ -20,7 +20,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
    A continuación, se describen las principales entidades y sus relaciones:
 
 ### a. Entidades
-#### a1. Beneficiario
+#### a.1. Beneficiario
   - ID_Beneficiario (PK)
   - Nombres
   - Apellidos
@@ -31,7 +31,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   - Situación_Laboral
   - Ingreso_Mensual
 
-* a2.  Crédito
+#### a.2.  Crédito
   - ID_Crédito (PK)
   - ID_Beneficiario (FK)
   - ID_Bono_FMV (FK)
@@ -42,7 +42,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   - Plazo_Meses
   - Fecha_Desembolso
 
-* a3. Vivienda
+#### a.3. Vivienda
   - ID_Vivienda (PK)
   - Dirección
   - Distrito
@@ -51,13 +51,13 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   - Tipo (Nueva/Usada)
   - Valor 
 
-* a4.  Entidad_Financiera
+#### a.4.  Entidad_Financiera
   - ID_Entidad_Financiera (PK)
   - Nombre
   - RUC
   - Dirección
   
-* a5.  Bono_FMV
+#### a.5.  Bono_FMV
   - ID_Bono_FMV (PK)
   - Tipo_Bono_FMV (NCMV/FCTP/S-CRC) 
 
