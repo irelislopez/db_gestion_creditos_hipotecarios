@@ -7,6 +7,8 @@ GO
 
 /**/
 -- Creación de la tabla "beneficiario"
+
+DROP TABLE IF EXISTS beneficiario
 CREATE TABLE beneficiario (
 id INT IDENTITY(1,1) PRIMARY KEY,
 nombres VARCHAR(155) NOT NULL, 
@@ -20,6 +22,7 @@ ingreso_mensual DECIMAL(10,2) NOT NULL,
 );
 
 -- Creación de la tabla "vivienda"
+DROP TABLE IF EXISTS vivienda
 CREATE TABLE vivienda (
 id INT IDENTITY(1,1) PRIMARY KEY, 
 direccion VARCHAR(255) NOT NULL, 
@@ -31,20 +34,23 @@ valor DECIMAL(10,2) NOT NULL,
 );
 
 -- Creación de la tabla "bono_fmv"
+DROP TABLE IF EXISTS bono_fmv
 CREATE TABLE bono_fmv (
 id INT IDENTITY(1,1) PRIMARY KEY, 
-tipo_bono_fmv VARCHAR(3) NOT NULL,
+tipo_bono_fmv VARCHAR(10) NOT NULL,
 );
 
 -- Creación de la tabla "entidad_financiera"
+DROP TABLE IF EXISTS entidad_financiera
 CREATE TABLE entidad_financiera (
 id INT IDENTITY(1,1) PRIMARY KEY, 
 nombre VARCHAR(100) NOT NULL, 
-ruc INT NOT NULL, 
+ruc VARCHAR NOT NULL, 
 direccion VARCHAR(255) NOT NULL, 
 );
 
 --Creación de la tabla "credito"
+DROP TABLE IF EXISTS credito
 CREATE TABLE credito (
 id INT IDENTITY(1,1) PRIMARY KEY,
 monto DECIMAL(10,2) NOT NULL,
@@ -55,4 +61,11 @@ beneficiario_id INT,
 entidad_financiera_id INT,
 vivienda_id INT, 
 bono_fmv_id INT, 
+CONSTRAINT fk_credito_beneficiario FOREIGN KEY (beneficiario_id) REFERENCES beneficiario (id),
+CONSTRAINT fk_credito_entidad_financiera FOREIGN KEY (entidad_financiera_id) REFERENCES entidad_financiera (id),
+CONSTRAINT fk_credito_vivienda FOREIGN KEY (vivienda_id) REFERENCES vivienda (id),
+CONSTRAINT fk_credito_bono_fmv FOREIGN KEY (bono_fmv_id) REFERENCES bono_fmv (id),
 );
+
+EXEC SP_HELP credito
+
