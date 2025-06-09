@@ -20,7 +20,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
    A continuación, se describen las principales entidades y sus relaciones:
 
 ### a. Entidades
-* a1. Beneficiario
+#### a1. Beneficiario
   - ID_Beneficiario (PK)
   - Nombres
   - Apellidos
