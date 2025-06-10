@@ -37,6 +37,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   - ID_Bono_FMV (FK)
   - ID_Vivienda (FK)
   - ID_Entidad_Financiera (FK)
+  - ID_Actividad_Crédito (PK)
   - Monto
   - Tasa_Interés
    
@@ -61,7 +62,6 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 
 #### a.6. Actividad_Crédito
   - ID_Actividad_Crédito (PK)
-  - ID_Crédito (PK)
   - Plazo_Meses
   - Fecha_Pago
   - Monto_Pagado_Principal
@@ -127,7 +127,8 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
 
 
 ## Diseño lógico
-![image](https://github.com/user-attachments/assets/9deafa44-b090-45a7-be79-565170fe4b31)
+![image](https://github.com/user-attachments/assets/fb8be523-f5bf-4de3-9b55-dafb9ad2a647)
+
 
 
 ## Realizado por el grupo 3:
