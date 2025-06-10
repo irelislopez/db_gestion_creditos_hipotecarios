@@ -73,6 +73,7 @@ bono_fmv_id INT,
 actividad_credito INT,
 );
 
+--Creación de FOREIGN KEYS
 CONSTRAINT fk_credito_beneficiario FOREIGN KEY (beneficiario_id) REFERENCES beneficiario (id),
 CONSTRAINT fk_credito_entidad_financiera FOREIGN KEY (entidad_financiera_id) REFERENCES entidad_financiera (id),
 CONSTRAINT fk_credito_vivienda FOREIGN KEY (vivienda_id) REFERENCES vivienda (id),
