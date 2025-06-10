@@ -19,7 +19,7 @@ VALUES
 SELECT*FROM vivienda;
 
 INSERT INTO vivienda (direccion, distrito, provincia, departamento, tipo, valor)
-VALUES 
+VALUES
 ('Jr. Las Flores 123', 'San Juan de Lurigancho', 'Lima', 'Lima', 'Nueva', 220000.00),
 ('Av. Grau 456', 'Trujillo', 'Trujillo', 'La Libertad', 'Usada', 185000.00),
 ('Calle Central 789', 'Arequipa', 'Arequipa', 'Arequipa', 'Nueva', 200000.00),

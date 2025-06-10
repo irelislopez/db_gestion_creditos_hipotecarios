@@ -136,4 +136,4 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
  - Lavado, Gianmarco.
  - López, Irelis.
  - Mittani, Kristhel.
- - Serrano, David.
+
