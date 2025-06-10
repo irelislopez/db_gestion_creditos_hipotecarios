@@ -39,9 +39,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   - ID_Entidad_Financiera (FK)
   - Monto
   - Tasa_Interés
-  - Plazo_Meses
-  - Fecha_Desembolso
-
+   
 #### a.3. Vivienda
   - ID_Vivienda (PK)
   - Dirección
@@ -61,6 +59,14 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
   - ID_Bono_FMV (PK)
   - Tipo_Bono_FMV (NCMV/FCTP/S-CRC) 
 
+#### a.6. Actividad_Crédito
+  - ID_Actividad_Crédito (PK)
+  - ID_Crédito (PK)
+  - Plazo_Meses
+  - Fecha_Pago
+  - Monto_Pagado_Principal
+  - Monto_Pagado_Interés
+  - Monto_Total_Pendiente
 
 ### b. Relaciones
 - Un Beneficiario puede tener uno o más Créditos.
@@ -117,7 +123,8 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
     - No se permite eliminar créditos del sistema, solo marcarlos como “anulados” o “cancelados”.
 
 ## Diagrama entidad relación
-![image](https://github.com/user-attachments/assets/03977989-a7be-495d-9347-9374957b7152)
+![image](https://github.com/user-attachments/assets/a12dee9d-45b6-4e09-a933-9ccfb2299426)
+
 
 ## Diseño lógico
 ![image](https://github.com/user-attachments/assets/9deafa44-b090-45a7-be79-565170fe4b31)
