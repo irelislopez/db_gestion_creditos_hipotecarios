@@ -72,7 +72,7 @@ El Fondo Mivivienda S.A. (FMV) es una institución peruana que promueve y financ
 - Un Beneficiario puede tener uno o más Créditos.
 - Un Crédito está asociado a un único Beneficiario, una Vivienda, una Entidad_Financiera y un bono.
 - Una Entidad_Financiera puede otorgar múltiples Créditos.
-- Un Bono puede estar asociado a múltiples Créditos.
+- Un Bono está asociado a Crédito.
 
 ## 5. Consideraciones Adicionales
 - Seguridad de Datos: Implementar medidas para proteger la información sensible de los beneficiarios.
