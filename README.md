@@ -129,6 +129,8 @@ Las reglas del negocio son condiciones, restricciones o políticas que deben cum
 ## Diseño lógico
 ![image](https://github.com/user-attachments/assets/fb8be523-f5bf-4de3-9b55-dafb9ad2a647)
 
+## Diseño físico
+![image](https://github.com/user-attachments/assets/fd687696-7dcc-4ae2-bd51-fac14a44dffb)
 
 
 ## Realizado por el grupo 3:
